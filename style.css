@@ -3,7 +3,6 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  /* color: white; */
   margin: 0;
   padding: 0;
 }
@@ -12,8 +11,6 @@ container
 ======= */
 
 .nav-container {
-  /* color: white; */
-  /* min-width: 100vw; */
   margin: auto;
   background-color: rgb(51, 51, 51);
 }
@@ -33,7 +30,6 @@ container
 
 .nav-title {
   text-shadow: 1px 1px black;
-  /* margin-left: 20px; */
 
   display: flex;
   align-items: center;
@@ -73,10 +69,6 @@ li {
   display: flex;
   margin: auto;
   justify-content: space-between;
-  /* padding: ; */
-  /* flex-direction: row; */
-  /* flex-wrap: wrap; */
-  /* align-items: flex-start; */
 }
 
 /* =====
@@ -89,7 +81,6 @@ li {
   flex: 3;
   flex-direction: column;
   justify-content: space-around;
-  /* padding: 5px 0; */
   margin: 50px 20px;
   max-width: 500px;
   min-width: 400px;
@@ -100,8 +91,6 @@ li {
   border: 2px solid black;
   width: 100%;
   margin: 20px 0;
-
-  /* margin: 15px; */
 }
 
 .top-card {
@@ -115,7 +104,6 @@ li {
   padding: 60px 0 0 50px;
   display: flex;
   flex-direction: column;
-  /* align-content: space-around; */
   justify-content: space-evenly;
 }
 
@@ -169,7 +157,6 @@ li {
   height: 50px;
   background-color: rgb(42, 42, 42);
   display: flex;
-  /* justify-items: space-around; */
   align-items: center;
   padding-left: 50px;
 }
@@ -184,8 +171,6 @@ li {
   padding: 15px 0 0 50px;
   display: flex;
   flex-direction: column;
-  /* align-content: space-around; */
-  /* justify-content: space-evenly; */
 }
 
 #education h4 {
@@ -203,7 +188,6 @@ li {
 .side-container {
   position: relative;
   display: flex;
-  /* flex: 1; */
   align-items: center;
   flex-direction: column;
   margin: 50px 20px;
@@ -237,12 +221,6 @@ li {
   display: flex;
   flex-direction: column;
 }
-
-/* background-color: lightgray;
-height: 200px;
-padding: 15px 0 0 50px;
-display: flex;
-flex-direction: column; */
 
 .contact-requests {
   display: flex;
