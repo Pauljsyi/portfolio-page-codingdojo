@@ -93,9 +93,10 @@ li {
 .card {
   position: relative;
   border: 2px solid black;
-  /* width: 500px; */
+  width: 100%;
+  margin: 4px;
 
-  margin: 15px;
+  /* margin: 15px; */
 }
 
 .top-card {
@@ -163,6 +164,7 @@ li {
   height: 50px;
   background-color: rgb(42, 42, 42);
   display: flex;
+  /* justify-items: space-around; */
   align-items: center;
   padding-left: 50px;
 }
@@ -201,4 +203,88 @@ li {
   flex-direction: column;
   margin: 50px auto;
   flex: 2;
+}
+
+#connection-req {
+  height: auto;
+}
+
+.badge {
+  background-color: white;
+  padding: 7px 13px;
+  border-radius: 50%;
+}
+
+.header#connection-req-header,
+.header#my-connection-header {
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: flex-start;
+}
+
+.connection-body {
+  background-color: lightgray;
+  padding: 15px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* background-color: lightgray;
+height: 200px;
+padding: 15px 0 0 50px;
+display: flex;
+flex-direction: column; */
+
+.contact-requests {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 50px;
+  padding: 5px 0;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.connection-pic {
+  height: 40px;
+  border: 3px solid white;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.respond-actions {
+  display: flex;
+  flex-direction: flex-end;
+}
+
+.res-buttons {
+  height: 40px;
+  margin: 0 5px;
+}
+
+/* Connection List */
+
+.contact-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  height: 50px;
+  padding: 5px 0 5px 15px;
+}
+
+.expand {
+  border-top: 2px solid black;
+  padding: 5px 0 5px 15px;
+  background-color: rgb(211, 211, 211);
+}
+
+.expand h3 a {
+  color: rgb(23, 162, 184);
 }
