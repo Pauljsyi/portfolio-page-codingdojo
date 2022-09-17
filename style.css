@@ -11,6 +11,7 @@ container
 ======= */
 
 .nav-container {
+  width: 55%;
   margin: auto;
   background-color: rgb(51, 51, 51);
 }
@@ -20,7 +21,7 @@ container
   ======= */
 
 .nav {
-  width: 55%;
+  width: 80%;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -149,6 +150,7 @@ li {
 .edit a {
   color: rgb(23, 162, 184);
   font: bold;
+  cursor: pointer;
 }
 
 /* education */
@@ -247,6 +249,10 @@ li {
 .respond-actions {
   display: flex;
   flex-direction: flex-end;
+}
+
+.respond-actions a {
+  cursor: pointer;
 }
 
 .res-buttons {

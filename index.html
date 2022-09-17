@@ -22,6 +22,7 @@
           <li><a href="#" class="active">My Profile</a></li>
           <li><a href="#">Find Connections</a></li>
         </ul>
+        <!-- change to sign in when clicked -->
         <button class="btn">Sign Out</button>
       </div>
     </div>
@@ -32,7 +33,7 @@
           <div class="top-card"></div>
           <div class="bottom-card">
             <img class="profile-pic" src="icons/dwight.jpg" alt="user image" />
-            <h1>Paul Yi</h1>
+            <h1 id="user-name">Paul Yi</h1>
             <div class="location">
               <img
                 class="map-marker"
@@ -47,7 +48,8 @@
             </div>
             <div class="edit">
               <img src="icons/gear.png" alt="gear icon" />
-              <a href="">edit profile</a>
+              <!-- make this button change name to John Doe -->
+              <a id="edit-profile" type="submit" onclick="editUserName()">edit profile</a>
             </div>
           </div>
         </div>
@@ -68,30 +70,36 @@
         <!-- connection request -->
         <div class="card" id="connection-req">
           <div class="header" id="connection-req-header" >
-            <a class="badge">2</a>
+            <!-- either buttons decreases this number -->
+            <a class="badge" id="request-badge">2</a>
             <h3>Connection Requests</h3>
           </div>
-          <div class="connection-body" >
-            <div class="contact-requests">
+          <div class="connection-body" id="contact-container">
+            <div class="contact-requests" id="todd">
               <div class="contacts">
                 <img class="connection-pic"  src="images/todd-s.jpg" alt="User image">
                 <h3>Todd E</h3>
               </div>
               <div class="respond-actions">
-
-                <img src="icons/accept-circle.png" alt="accept button" class="res-buttons">
-                <img src="icons/close-circle.png" alt="reject button" class="res-buttons">
+                <!-- change these to buttons and remove user from list when clicked on either one -->
+                <a id="accept-todd" type="submit" onclick="accept('#todd')">
+                  <img src="icons/accept-circle.png" alt="accept button" class="res-buttons">
+                </a>
+                <a id="reject-todd" type="submit" onclick="removeFromList('#todd')"><img src="icons/close-circle.png" alt="reject button" class="res-buttons"></a>
+                
               </div>
             </div>
-            <div class="contact-requests">
+            <div class="contact-requests" id="phil">
               <div class="contacts">
                 <img class="connection-pic"  src="images/phil-s.jpg" alt="User image">
                 <h3>Phil K</h3>
               </div>
               <div class="respond-actions">
-
-                <img src="icons/accept-circle.png" alt="accept button" class="res-buttons">
-                <img src="icons/close-circle.png" alt="reject button" class="res-buttons">
+                <!-- change these to buttons and remove user from list when clicked on either one -->
+                <a id="accept-phil" type="submit" onclick="accept('#phil')">
+                  <img src="icons/accept-circle.png" alt="accept button" class="res-buttons">
+                </a>
+                <a id="reject-phil" type="submit" onclick="removeFromList('#phil')"><img src="icons/close-circle.png" alt="reject button" class="res-buttons"></a>
               </div>
             </div>
           </div>
@@ -99,7 +107,9 @@
           <!-- your connection -->
           <div class="card" id="connection-req">
             <div class="header" id="my-connection-header" >
-              <a class="badge">500+</a>
+              <!-- x button decreases this number -->
+              <!-- check button increases this number -->
+              <a class="badge" id="connection-badge">50</a>
               <h3>Your Connections</h3>
             </div>
             <div class="connection-body" >
@@ -139,6 +149,6 @@
       </div>
       
     </div>
-    
+    <script src="index.js"></script>
   </body>
 </html>
